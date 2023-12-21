@@ -15,7 +15,7 @@ const Tours = ({ tours, notInterested }) => {
       <h1 className="title">Tour Plan</h1>
       <div className="cards">
         {tours.map((tour) => (
-          <Card {...tour} notInterested={notInterested} />
+          <Card key={tour.id} {...tour} notInterested={notInterested} />
         ))}
       </div>
     </div>
